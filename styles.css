@@ -1,0 +1,398 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #F5EBE0; /* Light background color */
+    color: #2C3E50;
+}
+
+a {
+    text-decoration: none;
+    color: #dd0973;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #EDEDE9; /* Light neutral color */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+    width: 120px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.nav-links a:hover {
+    color: #e0b49a; /* Accent color */
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background-color: #D6CCC2; /* Subtle background color */
+}
+
+.hero-content {
+    flex: 1;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    color: #2C3E50;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+.hero-phone img {
+    width: 350px;
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-phone img {
+        width: 250px;
+    }
+}
+
+/* Features Section */
+.features {
+    padding: 50px;
+    background-color: #F5EBE0; /* Light background */
+}
+
+.features h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #2C3E50;
+}
+
+.features-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.feature {
+    width: 30%;
+    text-align: center;
+    padding: 20px;
+    background-color: #E3D5CA; /* Softer background */
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.feature i {
+    font-size: 2rem;
+    color: #D5BDAF; /* Highlight icons with this color */
+    margin-bottom: 10px;
+}
+
+.feature h3 {
+    font-size: 1.5rem;
+    color: #2C3E50;
+}
+
+.feature p {
+    font-size: 1rem;
+    color: #555;
+}
+
+@media (max-width: 768px) {
+    .feature {
+        width: 100%;
+    }
+}
+
+/* Stories Section */
+.stories {
+    padding: 50px;
+    background-color: #EDEDE9; /* Neutral light color */
+}
+
+.stories h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #2C3E50;
+}
+
+.story-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.story {
+    width: 45%;
+    padding: 20px;
+    background-color: #E3D5CA;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.story h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #2C3E50;
+}
+
+.story p {
+    font-size: 1rem;
+    color: #555;
+}
+
+@media (max-width: 768px) {
+    .story {
+        width: 100%;
+    }
+}
+
+/* Footer */
+.contact {
+    padding: 50px;
+    background-color: #D6CCC2; /* Subtle footer background */
+    color: #2C3E50;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #2C3E50;
+}
+
+.contact a {
+    color: #2C3E50;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+    color: #D5BDAF; /* Hover effect color */
+}
+
+.social-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-links a {
+    font-size: 1.5rem;
+    color: #2C3E50;
+}
+
+.social-links a:hover {
+  color: #D5BDAF; /* Social icon hover */
+}/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: #7851a9;
+}
+
+/* Section 1: Header with Phone Display */
+.hero-section {
+    background-color: #C4D8E2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    height: 90vh;
+    color: #fff;
+}
+
+.hero-content {
+    flex: 1;
+    padding-right: 50px;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    background-color: #ff9933;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.phone-display {
+    position: relative;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.phone-image {
+    width: 300px;
+    border-radius: 30px;
+    border: 5px solid #fff;
+}
+
+.features-on-phone {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.features-on-phone i {
+    font-size: 32px;
+    color: #fff;
+    margin: 10px 0;
+}
+
+/* Section 2: Features Overview */
+.features-section {
+    padding: 60px;
+    background-color: #f2f2f2;
+    text-align: center;
+}
+
+.features-section h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: #778899;
+}
+
+.features-list {
+    list-style: none;
+}
+
+.features-list li {
+    font-size: 18px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.features-list i {
+    color: #778899;
+    margin-right: 10px;
+}
+
+/* Section 3: Showcase/Testimonial */
+.showcase-section {
+    padding: 60px;
+    background-color: #FFF;
+    text-align: center;
+}
+
+.testimonial h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.testimonial p {
+    font-size: 18px;
+    color: #555;
+}
+
+/* Section 4: Contact Form and Image */
+.contact-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px;
+    background-color: #f9f9f9;
+}
+
+.contact-form {
+    flex: 1;
+}
+
+.vertical-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    max-width: 500px;
+}
+
+.vertical-form label {
+    font-size: 16px;
+    color: #333;
+}
+
+.vertical-form input,
+.vertical-form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.vertical-form button {
+    padding: 10px;
+    background-color: #4da6ff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.vertical-form button:hover {
+    background-color: #3992d8;
+}
+
+.contact-image {
+    flex: 1;
+    display: flex;
+}
